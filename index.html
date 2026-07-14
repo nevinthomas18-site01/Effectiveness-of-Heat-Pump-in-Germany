@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A feasibility portfolio for rainwater-assisted shallow geothermal heating and cooling in Bavaria's existing homes.">
+  <title>Grounded Heat — Bavaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Grounded Heat home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>GROUNDED HEAT <small>BAVARIA / FIELD STUDY</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#concept">Concept</a>
+      <a href="#existing-homes">Existing homes</a>
+      <a href="#feasibility">Feasibility</a>
+      <a href="#risks">Risks</a>
+    </nav>
+    <a class="header-cta" href="#screening">Run site screening <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>48.1° N</span> A climate-resilient retrofit concept</p>
+        <h1>Old walls.<br><em>New warmth.</em><br>From the ground.</h1>
+        <p class="lead">A portfolio exploring how shallow geothermal baskets, heat pumps and managed rainwater could work together to heat and cool Bavaria’s existing homes.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#concept">Explore the system <span>↓</span></a>
+          <a class="text-link" href="#feasibility">Read the feasibility brief <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Illustration of a Bavarian house above geothermal baskets">
+        <div class="weather-tag"><span></span> WINTER DESIGN CASE <b>−12°C</b></div>
+        <div class="sun"></div>
+        <div class="mountains"><i></i><i></i><i></i></div>
+        <div class="house">
+          <div class="roof"></div><div class="chimney"></div>
+          <div class="window w1"></div><div class="window w2"></div>
+          <div class="door"></div>
+          <div class="heat-line h1"></div><div class="heat-line h2"></div><div class="heat-line h3"></div>
+        </div>
+        <div class="ground-line"></div>
+        <div class="soil">
+          <div class="soil-label l1"><span>01</span> Rain capture</div>
+          <div class="rain-pipe"></div>
+          <div class="tank"><span>FILTERED<br>STORAGE</span></div>
+          <div class="water-path p1"></div><div class="water-path p2"></div>
+          <div class="basket b1"><i></i></div><div class="basket b2"><i></i></div><div class="basket b3"><i></i></div>
+          <div class="soil-label l2"><span>02</span> Moisture-managed soil</div>
+          <div class="soil-label l3"><span>03</span> Geothermal exchange</div>
+          <div class="temp-scale"><b>+8–12°C</b><small>SEASONALLY STABLE GROUND</small></div>
+        </div>
+        <p class="visual-caption">Concept section — not to scale</p>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Project principles">
+      <div><strong>01</strong><span>Lower temperature lift</span><small>Stable ground supports efficient operation</small></div>
+      <div><strong>02</strong><span>Smaller excavation</span><small>Baskets use depth where garden area is limited</small></div>
+      <div><strong>03</strong><span>Seasonal dual use</span><small>Heating in winter, cooling in summer</small></div>
+      <div><strong>04</strong><span>Water-aware design</span><small>Rain is managed, monitored and kept separate</small></div>
+    </section>
+
+    <section class="section concept" id="concept">
+      <div class="section-intro reveal">
+        <p class="kicker">01 / THE CONCEPT</p>
+        <h2>Energy follows<br><em>the water.</em></h2>
+        <p>Moist soil generally transfers heat better than dry soil. This concept investigates whether controlled rainwater infiltration near—not into—the closed geothermal loop can help seasonal ground recovery while also managing roof runoff.</p>
+        <p class="note"><b>Important distinction:</b> rainwater does not circulate through the heat pump. A sealed water–glycol loop remains physically separate from filtered rainwater and groundwater.</p>
+      </div>
+      <div class="process-panel reveal">
+        <div class="process-tabs" role="tablist" aria-label="System seasons">
+          <button class="active" role="tab" aria-selected="true" data-season="winter">Winter / heating</button>
+          <button role="tab" aria-selected="false" data-season="summer">Summer / cooling</button>
+        </div>
+        <div class="flow-diagram" id="flow-diagram">
+          <div class="flow-item rain"><span class="icon">⌁</span><b>Roof + filter</b><small>captures rainfall</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-item ground"><span class="icon">≋</span><b>Moist ground</b><small>supports heat transfer</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-item pump"><span class="icon">↻</span><b>Heat pump</b><small>raises temperature</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-item home"><span class="icon">⌂</span><b>Existing home</b><small>low-temp delivery</small></div>
+        </div>
+        <div class="season-result">
+          <div><span>SOURCE</span><b id="source-temp">8–12°C ground</b></div>
+          <div><span>OUTPUT</span><b id="output-temp">35–55°C water</b></div>
+          <p id="season-copy">The basket loop absorbs low-grade heat. The compressor lifts it to a useful temperature for radiators or surface heating.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section homes" id="existing-homes">
+      <div class="homes-head reveal">
+        <p class="kicker">02 / EXISTING BUILDINGS</p>
+        <h2>The building is half<br>of the heating system.</h2>
+        <p>A heat pump can work in an older home—but efficiency is earned through lower flow temperatures, a well-sized source and targeted fabric improvements.</p>
+      </div>
+      <div class="readiness-grid reveal">
+        <article class="readiness-card featured">
+          <span class="card-index">A</span>
+          <p class="card-label">START HERE</p>
+          <h3>Run a room-by-room heat-loss calculation</h3>
+          <p>Historic fuel use is useful context, not a design load. Survey each room, emitter and envelope element before sizing the pump.</p>
+          <div class="card-metric"><b>DIN EN 12831</b><span>design basis</span></div>
+        </article>
+        <article class="readiness-card">
+          <span class="card-index">B</span>
+          <p class="card-label">TEMPERATURE TEST</p>
+          <h3>Can the home stay warm at 55°C or less?</h3>
+          <p>Reduce the boiler flow temperature on a cold day. If rooms lag, improve specific radiators, balancing, windows or insulation.</p>
+          <div class="mini-gauge"><span style="--value:72%"></span><i>35°</i><i>55°</i><i>70°</i></div>
+        </article>
+        <article class="readiness-card dark">
+          <span class="card-index">C</span>
+          <p class="card-label">RETROFIT ORDER</p>
+          <ol>
+            <li><span>01</span>Seal & insulate priority losses</li>
+            <li><span>02</span>Upgrade undersized emitters</li>
+            <li><span>03</span>Hydraulically balance</li>
+            <li><span>04</span>Size source and heat pump</li>
+          </ol>
+        </article>
+      </div>
+      <p class="source-line">Evidence note: Germany’s Environment Agency identifies flow temperature as a key efficiency driver and uses ≤55°C at the coldest design point as a practical “low-temperature-ready” threshold.</p>
+    </section>
+
+    <section class="section feasibility" id="feasibility">
+      <div class="feasibility-title reveal">
+        <p class="kicker">03 / PRE-FEASIBILITY</p>
+        <h2>Four gates before<br>the first excavation.</h2>
+      </div>
+      <div class="gates reveal">
+        <article><span>GATE 01</span><h3>Building</h3><p>Heat loss, emitters, flow temperature, domestic hot water and electrical capacity.</p><ul><li>Measured fuel history</li><li>Room heat-load survey</li><li>55°C cold-day test</li></ul></article>
+        <article><span>GATE 02</span><h3>Ground</h3><p>Soil conductivity, moisture, groundwater level, geology and excavability.</p><ul><li>Bavaria site check</li><li>Trial pit / soil survey</li><li>Source simulation</li></ul></article>
+        <article><span>GATE 03</span><h3>Water</h3><p>Roof yield, storage, filtration, overflow route and safe infiltration rate.</p><ul><li>Seasonal water balance</li><li>Setbacks from building</li><li>No uncontrolled saturation</li></ul></article>
+        <article><span>GATE 04</span><h3>Authority</h3><p>Water law, local drainage rules, protected areas, utilities and neighbour constraints.</p><ul><li>District authority enquiry</li><li>Water authority review</li><li>Utility search</li></ul></article>
+      </div>
+    </section>
+
+    <section class="screening" id="screening">
+      <div class="screening-copy reveal">
+        <p class="kicker light">QUICK SCREEN / 02 MIN</p>
+        <h2>Is the idea worth<br>studying at your site?</h2>
+        <p>Adjust four early-stage indicators. The result is a conversation starter—not a system size, performance promise or permit opinion.</p>
+        <div class="screening-warning">Pre-feasibility only <span>•</span> Always commission local engineering</div>
+      </div>
+      <form class="calculator reveal" id="calculator">
+        <label>Building heat demand <output id="heatOut">24,000 kWh/yr</output><input id="heat" type="range" min="8000" max="60000" step="1000" value="24000"><span class="range-labels"><i>8,000</i><i>60,000</i></span></label>
+        <label>Target flow temperature <output id="flowOut">50°C</output><input id="flow" type="range" min="30" max="70" step="1" value="50"><span class="range-labels"><i>30°C</i><i>70°C</i></span></label>
+        <label>Usable garden area <output id="areaOut">120 m²</output><input id="area" type="range" min="20" max="400" step="10" value="120"><span class="range-labels"><i>20 m²</i><i>400 m²</i></span></label>
+        <label>Annual roof runoff captured <output id="rainOut">55 m³/yr</output><input id="rain" type="range" min="0" max="150" step="5" value="55"><span class="range-labels"><i>0 m³</i><i>150 m³</i></span></label>
+        <div class="result" aria-live="polite">
+          <div><span>SCREENING SIGNAL</span><b id="resultTitle">Promising—with validation</b></div>
+          <span class="score" id="resultScore">68<small>/100</small></span>
+          <p id="resultCopy">Prioritise a ground survey and verify the cold-day flow temperature. Basket count and spacing require a dynamic ground model.</p>
+        </div>
+      </form>
+    </section>
+
+    <section class="section risks" id="risks">
+      <div class="risks-head reveal">
+        <div><p class="kicker">04 / FAILURE MODES</p><h2>Design for what<br>can go wrong.</h2></div>
+        <p>The hybrid idea adds interactions: water changes soil behaviour; soil affects heat exchange; building demand drives ground stress. Monitoring and conservative controls are part of the concept.</p>
+      </div>
+      <div class="risk-list reveal">
+        <details open><summary><span>01</span><b>Ground freezing or long-term thermal depletion</b><i>HIGH</i></summary><div><p>An undersized basket field can cool progressively, reduce efficiency and freeze moisture around the exchangers.</p><p><strong>Response:</strong> dynamic multi-year simulation, minimum brine-temperature limit, adequate basket spacing and summer recharge.</p></div></details>
+        <details><summary><span>02</span><b>Waterlogging near foundations</b><i>HIGH</i></summary><div><p>Too much infiltration, poor soil permeability or short setbacks can create dampness, settlement or frost-related damage.</p><p><strong>Response:</strong> infiltration testing, controlled dosing, emergency overflow, moisture sensors and geotechnical review.</p></div></details>
+        <details><summary><span>03</span><b>Permitting and groundwater constraints</b><i>HIGH</i></summary><div><p>Groundwater contact, protected areas and local conditions can change the approval route or rule out the concept.</p><p><strong>Response:</strong> run the Energie-Atlas site check and contact the lower water authority before detailed design.</p></div></details>
+        <details><summary><span>04</span><b>High-temperature emitters</b><i>MED</i></summary><div><p>Small radiators and high heat loss force higher flow temperatures, reducing seasonal efficiency.</p><p><strong>Response:</strong> room heat-loss calculation, targeted envelope work and larger low-temperature emitters.</p></div></details>
+        <details><summary><span>05</span><b>Rainwater quality and maintenance</b><i>MED</i></summary><div><p>Sediment, organic matter, blocked filters or uncontrolled bypasses can compromise infiltration performance.</p><p><strong>Response:</strong> first-flush management, accessible filter, inspection chamber, water-quality plan and logged maintenance.</p></div></details>
+      </div>
+    </section>
+
+    <section class="verdict">
+      <div class="verdict-mark">GH<span>°</span></div>
+      <div class="reveal">
+        <p class="kicker light">THE WORKING HYPOTHESIS</p>
+        <blockquote>“Technically plausible.<br>Site-specific by nature.<br><em>Worth testing carefully.</em>”</blockquote>
+        <p>The best first application is likely an existing home with moderate heat demand, a low-temperature-ready distribution system, excavatable garden space above sensitive groundwater, and a safe route for controlled rainwater overflow.</p>
+      </div>
+    </section>
+
+    <section class="section sources">
+      <div><p class="kicker">05 / SOURCE DESK</p><h2>Start with<br>the evidence.</h2></div>
+      <div class="source-links">
+        <a href="https://www.energieatlas.bayern.de/erneuerbare-energien/oberflaechennahe-geothermie" target="_blank" rel="noopener"><span>01</span><b>Energie-Atlas Bayern</b><small>Potential, technology and site-check tools</small><i>↗</i></a>
+        <a href="https://www.lfu.bayern.de/wasser/thermische_nutzung/oberflaechennahe_geothermie/index.htm" target="_blank" rel="noopener"><span>02</span><b>Bavarian Environment Agency</b><small>Water-law and shallow-geothermal guidance</small><i>↗</i></a>
+        <a href="https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/umgebungswaerme-waermepumpen/gebaeudecheck-waermepumpe" target="_blank" rel="noopener"><span>03</span><b>Environment Agency building check</b><small>Heat-pump readiness for existing homes</small><i>↗</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark"><i></i><i></i><i></i></span><span>GROUNDED HEAT <small>INDEPENDENT CONCEPT PORTFOLIO</small></span></div>
+    <p>Research concept · Bavaria, Germany · 2026</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
