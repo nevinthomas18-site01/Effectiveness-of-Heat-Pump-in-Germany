@@ -286,20 +286,44 @@
       </div>
 
       <div class="chp-diagram reveal" role="img" aria-label="Block diagram of a CHP and heat-pump system feeding a shared thermal buffer">
-        <div class="diagram-source block fuel"><span>INPUT</span><b>Fuel / biogas</b><small>Fuel choice determines emissions</small></div>
-        <div class="diagram-arrow horizontal">→</div>
-        <div class="diagram-chp block"><span>COGENERATION</span><b>CHP UNIT</b><small>engine · turbine · fuel cell</small></div>
+        <div class="diagram-source block fuel">
+          <div class="fuel-visual" aria-hidden="true"><i></i><i></i><i></i><strong>CH₄</strong></div>
+          <span>INPUT</span><b>Fuel / biogas</b><small>Fuel choice determines emissions</small>
+        </div>
+        <div class="diagram-arrow horizontal"><small>CHEMICAL ENERGY</small>→</div>
+        <div class="diagram-chp block">
+          <div class="chp-machine" aria-hidden="true"><i class="machine-core">↻</i><i class="power-port">⚡</i><i class="heat-port">≈</i></div>
+          <span>COGENERATION</span><b>CHP UNIT</b><small>engine · turbine · fuel cell</small>
+        </div>
         <div class="diagram-split">
-          <div class="path electricity"><i>01</i><b>Electricity</b><small>site loads / heat-pump compressor / grid</small></div>
-          <div class="path thermal"><i>02</i><b>Recovered heat</b><small>jacket water + exhaust heat exchanger</small></div>
+          <div class="path electricity"><i>01 · ELECTRICAL PATH</i><b>Electricity</b><div class="signal-line electric" aria-hidden="true"><span></span></div><small>site loads / heat-pump compressor / grid</small></div>
+          <div class="path thermal"><i>02 · THERMAL PATH</i><b>Recovered heat</b><div class="signal-line thermal" aria-hidden="true"><span></span></div><small>jacket water + exhaust heat exchanger</small></div>
         </div>
-        <div class="diagram-hp block accent"><span>TEMPERATURE LIFT</span><b>HEAT PUMP</b><small>optional low-grade CHP or ambient source</small></div>
-        <div class="diagram-buffer block"><span>HYDRAULIC HUB</span><b>STRATIFIED BUFFER</b><small>separates production from demand</small></div>
+        <div class="diagram-hp block accent">
+          <span>TEMPERATURE LIFT</span><b>HEAT PUMP</b>
+          <div class="hp-cycle-mini" aria-hidden="true"><i>EVAP</i><em>→</em><i>COMP</i><em>→</em><i>COND</i><em>↺</em></div>
+          <small>low-grade source + compressor work → useful heat</small>
+        </div>
+        <div class="diagram-buffer block">
+          <span>HYDRAULIC HUB</span><b>STRATIFIED BUFFER</b>
+          <div class="buffer-vessel" aria-hidden="true"><i></i><i></i><i></i><span class="buffer-hot">HOT</span><span class="buffer-cool">COOL</span></div>
+          <small>stores heat and separates production from demand</small>
+        </div>
         <div class="diagram-loads">
-          <div><b>Space heating</b><small>low-temperature circuit</small></div>
-          <div><b>Domestic hot water</b><small>hygiene temperature strategy</small></div>
-          <div><b>Cooling</b><small>reversible heat pump where suitable</small></div>
+          <div><i aria-hidden="true">♨</i><b>Space heating</b><small>low-temperature circuit</small></div>
+          <div><i aria-hidden="true">◒</i><b>Domestic hot water</b><small>hygiene temperature strategy</small></div>
+          <div><i aria-hidden="true">❄</i><b>Cooling</b><small>reversible heat pump where suitable</small></div>
         </div>
+      </div>
+
+      <div class="chp-function reveal" aria-label="How the integrated CHP and heat-pump system functions">
+        <article><span>01</span><b>Generate</b><p>The CHP converts fuel into electricity while capturing engine and exhaust heat.</p></article>
+        <i>→</i>
+        <article><span>02</span><b>Route</b><p>Useful-temperature heat goes directly to storage; cooler heat becomes a heat-pump source.</p></article>
+        <i>→</i>
+        <article><span>03</span><b>Upgrade</b><p>The compressor uses electricity to raise low-grade heat to the required delivery temperature.</p></article>
+        <i>→</i>
+        <article><span>04</span><b>Balance</b><p>The stratified buffer decouples production from fluctuating heating and hot-water demand.</p></article>
       </div>
 
       <div class="chp-logic reveal">
