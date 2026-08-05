@@ -356,21 +356,34 @@
         <p>Thermal power plants reject large heat flows through steam condensers, cooling-water circuits, flue gas and auxiliary equipment. A large heat pump can intercept a suitable low-temperature stream, raise its temperature and deliver it to district heating, process heat or a nearby campus—without mixing plant water with the customer network.</p>
       </div>
 
+      <div class="plant-legend reveal" aria-label="Diagram colour legend">
+        <span><i class="legend-dot steam"></i>Steam + power cycle</span>
+        <span><i class="legend-dot recovered"></i>Recovered low-grade heat</span>
+        <span><i class="legend-dot electricity"></i>Electricity input</span>
+        <span><i class="legend-dot useful"></i>Useful heat delivery</span>
+      </div>
+
       <div class="plant-diagram reveal" role="img" aria-label="Power plant condenser waste heat recovered by a large heat pump and delivered to district heating">
-        <div class="plant-block generation"><span>POWER CYCLE</span><b>Boiler / reactor</b><small>high-temperature heat source</small></div>
+        <div class="plant-block generation"><i class="plant-icon" aria-hidden="true">♨</i><span>POWER CYCLE</span><b>Boiler / reactor</b><small>high-temperature heat source</small></div>
         <i class="plant-arrow">→</i>
-        <div class="plant-block turbine"><span>GENERATOR</span><b>Steam turbine</b><small>electricity to grid + plant loads</small></div>
+        <div class="plant-block turbine"><i class="plant-icon" aria-hidden="true">◉</i><span>GENERATOR</span><b>Steam turbine</b><small>electricity to grid + plant loads</small></div>
         <i class="plant-arrow">→</i>
-        <div class="plant-block condenser"><span>LOW-GRADE SOURCE</span><b>Steam condenser</b><small>cooling-water loop typically carries rejected heat</small></div>
+        <div class="plant-block condenser"><i class="plant-icon" aria-hidden="true">≋</i><span>LOW-GRADE SOURCE</span><b>Steam condenser</b><small>cooling-water loop typically carries rejected heat</small></div>
         <i class="plant-arrow hp-arrow">→</i>
-        <div class="plant-block plant-hp"><span>TEMPERATURE UPGRADE</span><b>Large heat pump</b><small>evaporator extracts heat · compressor adds work</small></div>
+        <div class="plant-block plant-hp"><i class="plant-icon" aria-hidden="true">↻</i><span>TEMPERATURE UPGRADE</span><b>Large heat pump</b><small>evaporator extracts heat · compressor adds work</small></div>
         <i class="plant-arrow">→</i>
-        <div class="plant-block network"><span>USEFUL SINK</span><b>District heat</b><small>supply to buildings / processes</small></div>
+        <div class="plant-block network"><i class="plant-icon" aria-hidden="true">⌂</i><span>USEFUL SINK</span><b>District heat</b><small>supply to buildings / processes</small></div>
         <div class="plant-loop cooling-loop"><span>COOLING WATER</span><b>Condenser → heat-pump evaporator → cooled return</b></div>
         <div class="plant-loop electric-loop"><span>ELECTRICITY</span><b>Grid or generator → compressor and pumps</b></div>
         <div class="plant-loop return-loop"><span>DISTRICT RETURN</span><b>Network return → heat-pump condenser → supply</b></div>
       </div>
       <p class="diagram-note">Concept diagram. The recovered stream normally transfers energy through one or more heat exchangers; cooling water, refrigerant and district-heating water remain separate circuits.</p>
+
+      <div class="diagram-takeaway reveal">
+        <span>THE CENTRAL IDEA</span>
+        <p><b>The heat pump does not create the recovered heat.</b> It adds electrical work to lift otherwise unusable condenser heat to the temperature required by the network.</p>
+        <div class="takeaway-gauge" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
 
       <div class="cascade-diagram reveal" aria-label="Cascade integration of power plant waste heat with a heat pump and peak heater">
         <div class="cascade-stage"><span>01 / RECOVER</span><b>Condenser or flue-gas heat</b><small>Stable flow and clean interface are preferred</small></div>
@@ -419,11 +432,11 @@
         <p>An LCA should test whether the recovered heat reduces total environmental burdens across the full system—not simply label condenser heat as “free.”</p>
       </div>
       <div class="lca-boundary reveal" role="img" aria-label="Life cycle assessment boundary for a power plant waste heat recovery heat pump">
-        <div><span>A</span><b>Equipment</b><small>heat pump · heat exchangers · pipes · storage</small></div><i>→</i>
-        <div><span>B</span><b>Construction</b><small>steel · copper · refrigerant · civil works</small></div><i>→</i>
-        <div class="lca-use"><span>C</span><b>Use phase</b><small>electricity · pumps · maintenance · leakage</small></div><i>→</i>
-        <div><span>D</span><b>Displaced heat</b><small>boiler / CHP / alternative network supply</small></div><i>→</i>
-        <div><span>E</span><b>End of life</b><small>recovery · recycling · refrigerant treatment</small></div>
+        <div><span>A <i aria-hidden="true">▦</i></span><b>Equipment</b><small>heat pump · heat exchangers · pipes · storage</small></div><i>→</i>
+        <div><span>B <i aria-hidden="true">◇</i></span><b>Construction</b><small>steel · copper · refrigerant · civil works</small></div><i>→</i>
+        <div class="lca-use"><span>C <i aria-hidden="true">↻</i></span><b>Use phase</b><small>electricity · pumps · maintenance · leakage</small></div><i>→</i>
+        <div><span>D <i aria-hidden="true">−</i></span><b>Displaced heat</b><small>boiler / CHP / alternative network supply</small></div><i>→</i>
+        <div><span>E <i aria-hidden="true">♻</i></span><b>End of life</b><small>recovery · recycling · refrigerant treatment</small></div>
       </div>
       <div class="lca-grid reveal">
         <article><span>FUNCTIONAL UNIT</span><h3>1 MWh of useful heat delivered</h3><p>Define delivery temperature, location and time period so alternatives provide an equivalent service.</p></article>
