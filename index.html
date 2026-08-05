@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A practical portfolio of heat-pump integrations for buildings: shallow geothermal, rainwater, CHP and useful waste-heat recovery.">
+  <meta name="description" content="A practical portfolio of heat-pump integrations: shallow geothermal, rainwater, CHP, power-plant waste-heat recovery and life-cycle assessment.">
   <title>Heat Pump Integration Atlas — Bavaria</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,12 @@
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">
-      <a href="#concept">Heat sources</a>
-      <a href="#integration-map">Integration map</a>
+      <a href="#integration-map">Heat sources</a>
       <a href="#chp-integration">CHP + heat pump</a>
+      <a href="#power-plant-recovery">Power plants</a>
       <a href="#waste-heat">Waste heat</a>
-      <a href="#feasibility">Feasibility</a>
-      <a href="#risks">Risks</a>
+      <a href="#power-plant-feasibility">Feasibility</a>
+      <a href="#power-lca">LCA</a>
       <a href="#about">About</a>
     </nav>
     <a class="header-cta" href="#screening">Run site screening <span>↗</span></a>
@@ -349,9 +349,97 @@
       </div>
     </section>
 
+    <section class="plant-recovery" id="power-plant-recovery">
+      <div class="plant-intro reveal">
+        <p class="kicker light">08 / POWER-PLANT HEAT RECOVERY</p>
+        <h2>From cooling loss<br>to <em>useful heat.</em></h2>
+        <p>Thermal power plants reject large heat flows through steam condensers, cooling-water circuits, flue gas and auxiliary equipment. A large heat pump can intercept a suitable low-temperature stream, raise its temperature and deliver it to district heating, process heat or a nearby campus—without mixing plant water with the customer network.</p>
+      </div>
+
+      <div class="plant-diagram reveal" role="img" aria-label="Power plant condenser waste heat recovered by a large heat pump and delivered to district heating">
+        <div class="plant-block generation"><span>POWER CYCLE</span><b>Boiler / reactor</b><small>high-temperature heat source</small></div>
+        <i class="plant-arrow">→</i>
+        <div class="plant-block turbine"><span>GENERATOR</span><b>Steam turbine</b><small>electricity to grid + plant loads</small></div>
+        <i class="plant-arrow">→</i>
+        <div class="plant-block condenser"><span>LOW-GRADE SOURCE</span><b>Steam condenser</b><small>cooling-water loop typically carries rejected heat</small></div>
+        <i class="plant-arrow hp-arrow">→</i>
+        <div class="plant-block plant-hp"><span>TEMPERATURE UPGRADE</span><b>Large heat pump</b><small>evaporator extracts heat · compressor adds work</small></div>
+        <i class="plant-arrow">→</i>
+        <div class="plant-block network"><span>USEFUL SINK</span><b>District heat</b><small>supply to buildings / processes</small></div>
+        <div class="plant-loop cooling-loop"><span>COOLING WATER</span><b>Condenser → heat-pump evaporator → cooled return</b></div>
+        <div class="plant-loop electric-loop"><span>ELECTRICITY</span><b>Grid or generator → compressor and pumps</b></div>
+        <div class="plant-loop return-loop"><span>DISTRICT RETURN</span><b>Network return → heat-pump condenser → supply</b></div>
+      </div>
+      <p class="diagram-note">Concept diagram. The recovered stream normally transfers energy through one or more heat exchangers; cooling water, refrigerant and district-heating water remain separate circuits.</p>
+
+      <div class="cascade-diagram reveal" aria-label="Cascade integration of power plant waste heat with a heat pump and peak heater">
+        <div class="cascade-stage"><span>01 / RECOVER</span><b>Condenser or flue-gas heat</b><small>Stable flow and clean interface are preferred</small></div>
+        <i>→</i>
+        <div class="cascade-stage active"><span>02 / UPGRADE</span><b>Heat pump preheats return water</b><small>Keep the temperature lift as small as practical</small></div>
+        <i>→</i>
+        <div class="cascade-stage"><span>03 / TOP UP</span><b>Steam-water heater or peak unit</b><small>Only supplies the remaining temperature gap</small></div>
+        <i>→</i>
+        <div class="cascade-stage"><span>04 / DELIVER</span><b>Thermal storage + heat network</b><small>Matches plant output to variable demand</small></div>
+      </div>
+
+      <div class="plant-literature reveal">
+        <div class="literature-head"><p class="kicker">WHAT THE LITERATURE SAYS</p><h3>Promising—when load, lift and boundaries are explicit.</h3></div>
+        <div class="literature-cards">
+          <article><span>2016 · WANG &amp; LAHDELMA</span><h4>Cooling water is a major recoverable stream</h4><p>The study compared compressor and absorption heat-pump routes for thermal and CHP plants and highlighted cooling water as a large, comparatively stable low-grade source for district heating.</p><a href="https://research.aalto.fi/en/publications/using-heat-pump-to-recover-waste-heat-from-thermal-power-plants-f/" target="_blank" rel="noopener">Research record ↗</a></article>
+          <article><span>2022 · WANG ET AL.</span><h4>COP and operating point decide the benefit</h4><p>A dynamic CHP model found that electric heat pumps can recover cooling-water heat and improve heat–power flexibility. Energy savings increased with heat-pump share and COP, but disappeared below a case-specific critical COP.</p><a href="https://doi.org/10.1016/j.energy.2022.123846" target="_blank" rel="noopener">Peer-reviewed paper ↗</a></article>
+          <article><span>2025 · GUSTAVSEN ET AL.</span><h4>Environmental claims need consistent accounting</h4><p>A review of 39 excess-heat studies found inconsistent definitions, system boundaries and burden allocation. Seasonal timing and double counting of avoided impacts remain central LCA concerns.</p><a href="https://doi.org/10.1016/j.jenvman.2025.126234" target="_blank" rel="noopener">Review article ↗</a></article>
+          <article><span>2023 · ZEILERBAUER ET AL.</span><h4>Climate benefits can be large, but impacts can shift</h4><p>An industrial high-temperature heat-pump LCA reported major best-case greenhouse-gas reductions against fossil steam, while several other impact categories were mixed—supporting a multi-indicator assessment.</p><a href="https://doi.org/10.1016/j.spc.2023.06.016" target="_blank" rel="noopener">LCA study ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section plant-feasibility" id="power-plant-feasibility">
+      <div class="plant-feasibility-head reveal">
+        <div><p class="kicker">09 / POWER-PLANT FEASIBILITY</p><h2>Five matches must<br>work <em>at once.</em></h2></div>
+        <p>A large rejected heat flow is not enough. The project succeeds only when the source, heat sink, electricity, plant operation and commercial lifetime align.</p>
+      </div>
+      <div class="feasibility-matrix reveal">
+        <article><span>01</span><h3>Thermal match</h3><p>Measure source temperature, flow, seasonal availability and the required district supply/return temperatures.</p><b>KEY TEST</b><small>Hourly heat balance and temperature-lift map</small></article>
+        <article><span>02</span><h3>Hydraulic match</h3><p>Confirm allowable condenser backpressure, cooling-water pressure drop, fouling risk and isolation heat exchangers.</p><b>KEY TEST</b><small>Plant thermodynamic + hydraulic simulation</small></article>
+        <article><span>03</span><h3>Demand match</h3><p>Locate a long-duration heat sink. Network distance, return temperature and summer demand govern useful operating hours.</p><b>KEY TEST</b><small>Heat-duration curve and network study</small></article>
+        <article><span>04</span><h3>Electrical match</h3><p>Assess compressor power, grid connection, marginal electricity, flexibility value and auxiliary pumping.</p><b>KEY TEST</b><small>Hourly dispatch and marginal-emissions model</small></article>
+        <article><span>05</span><h3>Lifetime match</h3><p>The host plant and heat network must operate long enough to recover heat-pump, pipework and substation investment.</p><b>KEY TEST</b><small>Scenario-based NPV with closure and fuel risks</small></article>
+      </div>
+      <div class="go-no-go reveal">
+        <div><span>STRONG CANDIDATE</span><b>Warm return + nearby demand + high annual utilisation</b></div>
+        <div><span>WEAK CANDIDATE</span><b>Distant heat sink + high supply temperature + uncertain plant lifetime</b></div>
+      </div>
+      <p class="feasibility-disclaimer">Screening ranges are plant-specific. A feasibility study should compare direct heat exchange, electric heat pumps, absorption heat pumps, steam extraction, thermal storage and the “do nothing” baseline using the same heat and power outputs.</p>
+    </section>
+
+    <section class="plant-lca" id="power-lca">
+      <div class="lca-head reveal">
+        <p class="kicker light">10 / LIFE-CYCLE ASSESSMENT</p>
+        <h2>Count the recovery.<br><em>Count the consequences.</em></h2>
+        <p>An LCA should test whether the recovered heat reduces total environmental burdens across the full system—not simply label condenser heat as “free.”</p>
+      </div>
+      <div class="lca-boundary reveal" role="img" aria-label="Life cycle assessment boundary for a power plant waste heat recovery heat pump">
+        <div><span>A</span><b>Equipment</b><small>heat pump · heat exchangers · pipes · storage</small></div><i>→</i>
+        <div><span>B</span><b>Construction</b><small>steel · copper · refrigerant · civil works</small></div><i>→</i>
+        <div class="lca-use"><span>C</span><b>Use phase</b><small>electricity · pumps · maintenance · leakage</small></div><i>→</i>
+        <div><span>D</span><b>Displaced heat</b><small>boiler / CHP / alternative network supply</small></div><i>→</i>
+        <div><span>E</span><b>End of life</b><small>recovery · recycling · refrigerant treatment</small></div>
+      </div>
+      <div class="lca-grid reveal">
+        <article><span>FUNCTIONAL UNIT</span><h3>1 MWh of useful heat delivered</h3><p>Define delivery temperature, location and time period so alternatives provide an equivalent service.</p></article>
+        <article><span>COUNTERFACTUAL</span><h3>What would happen without recovery?</h3><p>Model the marginal heat source actually displaced and any change in power-plant electricity output—not an arbitrary average boiler.</p></article>
+        <article><span>ALLOCATION</span><h3>Separate heat and electricity burdens</h3><p>Use a transparent allocation or system-expansion method and test alternatives. Do not credit the same avoided emissions to both heat supplier and user.</p></article>
+        <article><span>TIME</span><h3>Match hourly electricity and heat</h3><p>Grid carbon intensity, plant dispatch, heat demand and storage vary. Annual averages can hide high-impact operating periods.</p></article>
+        <article><span>IMPACT CATEGORIES</span><h3>Look beyond climate change</h3><p>Include resource use, toxicity, particulate matter, acidification, water use, land use and refrigerant-related impacts where relevant.</p></article>
+        <article><span>SENSITIVITY</span><h3>Stress the uncertain variables</h3><p>Test COP, source/sink temperature, annual hours, network losses, electricity mix, refrigerant leakage and remaining plant lifetime.</p></article>
+      </div>
+      <div class="lca-equation reveal"><span>NET LIFE-CYCLE BENEFIT</span><b>avoided reference heat</b><i>−</i><b>heat-pump electricity</b><i>−</i><b>new infrastructure + losses</b><i>±</i><b>change in power output</b></div>
+      <p class="lca-note">Literature caution: excess-heat LCAs often use different definitions, boundaries and allocation rules. Report both attributional and consequential perspectives when the power plant’s dispatch or retirement decision could change.</p>
+    </section>
+
     <section class="section comparison" id="shallow-vs-fracking">
       <div class="comparison-head reveal">
-        <div><p class="kicker">08 / READER GUIDE</p><h2>Shallow geothermal<br>is <em>not</em> fracking.</h2></div>
+        <div><p class="kicker">11 / READER GUIDE</p><h2>Shallow geothermal<br>is <em>not</em> fracking.</h2></div>
         <p>Both work below ground, but they have different purposes, scales and risk pathways. This portfolio investigates a small, closed-loop ground heat exchanger for a building—not the high-pressure fracturing of rock to extract oil or gas.</p>
       </div>
       <div class="comparison-table reveal" role="table" aria-label="Comparison of shallow geothermal systems and fracking">
@@ -370,7 +458,7 @@
 
     <section class="section risks" id="risks">
       <div class="risks-head reveal">
-        <div><p class="kicker">09 / FAILURE MODES</p><h2>Design for what<br>can go wrong.</h2></div>
+        <div><p class="kicker">12 / FAILURE MODES</p><h2>Design for what<br>can go wrong.</h2></div>
         <p>The hybrid idea adds interactions: water changes soil behaviour; soil affects heat exchange; building demand drives ground stress. Monitoring and conservative controls are part of the concept.</p>
       </div>
       <div class="risk-list reveal">
@@ -401,7 +489,7 @@
         <p>Researcher profile<br>Bavaria, Germany</p>
       </div>
       <div class="about-copy reveal">
-        <p class="kicker">10 / ABOUT THE RESEARCHER</p>
+        <p class="kicker">13 / ABOUT THE RESEARCHER</p>
         <h2>Turning ground<br>conditions into<br><em>building solutions.</em></h2>
         <p class="about-lead">I’m Nevin Thomas. This portfolio documents my investigation into practical, climate-resilient heat-pump systems for Bavaria’s buildings.</p>
         <p>My focus now extends from shallow geothermal energy and responsible rainwater management to CHP coordination, waste-heat recovery and thermal storage. The goal is not to present one universal solution, but to show how the right heat source, temperature level and control strategy can be matched to each site.</p>
@@ -428,7 +516,7 @@
     </section>
 
     <section class="section sources">
-      <div><p class="kicker">11 / SOURCE DESK</p><h2>Start with<br>the evidence.</h2></div>
+      <div><p class="kicker">14 / SOURCE DESK</p><h2>Start with<br>the evidence.</h2></div>
       <div class="source-links">
         <a href="https://www.energieatlas.bayern.de/erneuerbare-energien/oberflaechennahe-geothermie" target="_blank" rel="noopener"><span>01</span><b>Energie-Atlas Bayern</b><small>Potential, technology and site-check tools</small><i>↗</i></a>
         <a href="https://www.lfu.bayern.de/wasser/thermische_nutzung/oberflaechennahe_geothermie/index.htm" target="_blank" rel="noopener"><span>02</span><b>Bavarian Environment Agency</b><small>Water-law and shallow-geothermal guidance</small><i>↗</i></a>
@@ -437,6 +525,10 @@
         <a href="https://www.umweltbundesamt.de/themen/klima-energie/fluorierte-treibhausgase-fckw/natuerliche-kaeltemittel-in-stationaeren-anlagen/allgemeine-informationen/waermerueckgewinnung" target="_blank" rel="noopener"><span>05</span><b>Environment Agency: Heat recovery</b><small>Waste-heat sources, direct recovery and temperature upgrading</small><i>↗</i></a>
         <a href="https://energy.ec.europa.eu/topics/energy-efficiency/cogeneration-heat-and-power_en" target="_blank" rel="noopener"><span>06</span><b>European Commission: CHP</b><small>Cogeneration, trigeneration and efficient use of recovered heat</small><i>↗</i></a>
         <a href="https://energy.ec.europa.eu/topics/energy-efficiency/heat-pumps_en" target="_blank" rel="noopener"><span>07</span><b>European Commission: Heat pumps</b><small>Ambient, renewable and waste-heat integration</small><i>↗</i></a>
+        <a href="https://research.aalto.fi/en/publications/using-heat-pump-to-recover-waste-heat-from-thermal-power-plants-f/" target="_blank" rel="noopener"><span>08</span><b>Power-plant heat-pump study</b><small>Wang &amp; Lahdelma (2016): cooling-water recovery for district heating</small><i>↗</i></a>
+        <a href="https://doi.org/10.1016/j.energy.2022.123846" target="_blank" rel="noopener"><span>09</span><b>CHP flexibility and waste heat</b><small>Wang et al. (2022): dynamic electric heat-pump integration</small><i>↗</i></a>
+        <a href="https://doi.org/10.1016/j.jenvman.2025.126234" target="_blank" rel="noopener"><span>10</span><b>Excess-heat LCA review</b><small>39-study review of boundaries, allocation and temporal effects</small><i>↗</i></a>
+        <a href="https://doi.org/10.1016/j.spc.2023.06.016" target="_blank" rel="noopener"><span>11</span><b>High-temperature heat-pump LCA</b><small>Life-cycle impacts of industrial steam production</small><i>↗</i></a>
       </div>
     </section>
   </main>

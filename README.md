@@ -8,5 +8,7 @@ The website includes:
 - retrofit guidance for existing residential buildings;
 - a CHP and heat-pump integration block diagram;
 - waste-heat recovery sources, priorities, and feasibility requirements;
+- power-plant condenser and cooling-water heat-recovery diagrams;
+- a literature-based power-plant feasibility framework and LCA boundary;
 - shallow-geothermal versus fracking guidance;
 - risks, site-screening questions, and authoritative sources.
